@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  expressjs-app-sample:
+    container_name: expressjs-app-sample
+    build: .
+    command: npm start
+    volumes:
+      - expressjs-app-sample:/usr/src/expressjs-app-sample
+      - /usr/src/expressjs-app-sample/node_modules
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    
+volumes:
+  expressjs-app-sample:
