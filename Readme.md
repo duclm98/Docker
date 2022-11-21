@@ -4,5 +4,5 @@
 1. docker compose ps: Danh sách các images
 2. docker compose up -d: Khởi tạo image
 3. docker compose down: Xóa image
-4. docker compose start: Dừng image
+4. docker compose start: Khởi động image
 5. docker compose stop: Dừng image
